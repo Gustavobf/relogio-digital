@@ -1,0 +1,45 @@
+html{
+    background: linear-gradient(#FFF, #a6b3f2);
+    height: 100%;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.relogio{
+    width: 400px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5% auto;
+    font-family: 'Lato', sans-serif;
+}
+
+#horas, #data{
+    text-align: center;
+    font-size: 40px;
+    margin: 1em;
+}
+
+#hora, #minuto, #segundo{
+    display: inline-block;
+}
+
+#dia, #mes, #ano{
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+@media screen and (max-width: 480px) {
+    html{
+        background: linear-gradient(#FFF, #a6b3f2);
+        height: 300vh;
+    }
+
+    .relogio{
+        transform: scale(2);
+        margin-top: 50%;
+    }
+}
